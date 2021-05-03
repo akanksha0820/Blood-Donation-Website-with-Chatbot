@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Blood Donation</title>
+      <link rel="stylesheet" type="text/css" href="css/search.css">
+      <link rel="stylesheet" type="text/css" href="css/styles.css">
+    </head>
+    <body>
+
+      <nav class="navbar">
+        <div class="brand-title">Blood Bank</div>
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="eligibility.html">Eligibility</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="search.html">Request</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="ContactUs.html">Contact Us</a></li>
+            <li><a href="chatbot.html">Chatbot</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="w3-container">
+        <div class="input-box w3-card-2">
+            <header>
+                <h4>Search Blood Group</h4>
+            </header>
+            <hr>
+            <form action="app/search.php" method="post" id="ajaxForm">
+                <input type="hidden" name="origin" value="register">
+                <label>Blood Group</label>
+                <select name="blood_group" id="blood_group" class="w3-input w3-border">
+                    <option>O+</option>
+                    <option>O-</option>
+                    <option>A+</option>
+                    <option>B+</option>
+                    <option>A-</option>
+                    <option>B-</option>
+                    <option>AB+</option>
+                    <option>AB-</option>
+                </select>
+                <br>
+                <input type="submit" class="w3-btn w3-blue" value="Submit">
+                <!-- <input type="reset" class="w3-btn w3-red" value="Reset"> -->
+            </form>
+        </div>
+    </div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+        
+    </script>
+
+<div class="footer">
+        Developed for Health and Support
+    </div>
+
+<script type="text/javascript">
+function navOpen() {
+  if ($("#header").hasClass('visibler'))
+    $("#header").removeClass('visibler');
+  else
+    $("#header").addClass('visibler');
+      }
+const toggleButton = document.getElementsByClassName('toggle-button')[0]
+const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+
+toggleButton.addEventListener('click', () => {
+  navbarLinks.classList.toggle('active')
+})  
+</script>
+
+</body>
+</html>
