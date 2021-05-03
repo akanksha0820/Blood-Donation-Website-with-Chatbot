@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FAQ</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/faq.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+    <div class="brand-title">Blood Bank</div>
+    <a href="#" class="toggle-button">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </a>
+    <div class="navbar-links">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="eligibility.html">Eligibility</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="search.html">Request</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="ContactUs.html">Contact Us</a></li>
+        <li><a href="chatbot.html">Chatbot</a></li>
+      </ul>
+    </div>
+  </nav>
+            <div class="w3-row">
+                <div class="w3-half">
+                    <div class="faq-container">
+                        <h2 class="faq-head">FAQ</h2>
+                        <div class="q-and-a">
+                            <div class="question">What is BLOOD Donation?</div>
+                            <div class="answer">Donating blood is a life saving measure especially when you have a rare blood type. Donating
+                                blood is safe and simple. It takes approximately 10-15 minutes to complete the blood donation
+                                process. We can save up to 3 to 4 precious lives by donating blood.</div>
+                        </div><br>
+                        <div class="q-and-a">
+                            <div class="question">How often may I donate?</div>
+                            <div class="answer">Based on AABB and FDA requirements, you must wait 56 days between whole blood donations. Platelet (apheresis) donors may donate more frequently. This is because the body replenishes platelets and plasma more quickly than red cells. Platelets will return to normal levels within about 72 hours of donating. Plasma (the liquid portion of your blood) will return to normal levels within a couple of days. </div>
+                        </div><br>
+                        <div class="q-and-a">
+                            <div class="question">Why are there often blood shortages?</div>
+                            <div class="answer">Most blood centers strive to maintain an optimum inventory level of a three-day supply. Due to unpredictable demands for trauma patients, the inventory fluctuates hourly. When the blood supply drops below a three-day level, blood centers begin alerting local donors to increase <br>the inventory to a safe operating level.</div>
+                        </div><br><br>
+                        
+
+                    </div>
+                </div>
+                <div class="w3-half">
+                    <img src="images/side-big-3.jpg" alt="" class="side-big">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        Developed for Health and Support
+    </div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/main.js"></script>
+    <script type="text/javascript">
+        
+const toggleButton = document.getElementsByClassName('toggle-button')[0]
+const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+toggleButton.addEventListener('click', () => {
+  navbarLinks.classList.toggle('active')
+})
+</script>
+</body>
+
+</html>
